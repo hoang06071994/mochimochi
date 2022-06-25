@@ -111,15 +111,15 @@
 }
 /* left */
 .notebook_1_left{
-      width: 25%;
+      width: 22%;
       max-height: 1080px;
       background:#DADADA;
 }
 
 /* center */
 .notebook_1_center{
-      width: 50%;
-      height: 670px;
+      width: 56%;
+      min-height: 800px;
       background: #FFFFFF;
       padding: 0 25px;
 
@@ -187,7 +187,7 @@
 
 /* right */
 .notebook_1_right{
-      width: 24%;
+      width: 22%;
       max-height: 1080px;
       background: #DADADA;
 }

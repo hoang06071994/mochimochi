@@ -39,9 +39,6 @@ function App() {
        {/* notebook theo các cấp độ */}
        <Route path='/Page/Notebook' >
           <Route path=':capdo' element={<NoteCapdo1></NoteCapdo1>}/>
-          <Route path=':capdo' element={<NoteCapdo2></NoteCapdo2>}/>
-          <Route path=':capdo3' element={<NoteCapdo3></NoteCapdo3>}/>
-          <Route path=':capdo4' element={<NoteCapdo4></NoteCapdo4>}/>
           <Route path='Notebook' element={<Notebook></Notebook>}/>
        </Route>
 

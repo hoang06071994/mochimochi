@@ -14,11 +14,12 @@ import axios from 'axios'
 
 function Notebook(props) {
   const navigate = useNavigate()
-  // chuyển trang
+  // chuyển trangs
   function onof_capdo1(){
     navigate('/Page/Notebook/NoteCapdo1')
   }
   function onof_capdo2(){
+    alert('bạn có chắc chuyển trang')
     navigate('/Page/Notebook/NoteCapdo2')
   }
   function onof_capdo3(){

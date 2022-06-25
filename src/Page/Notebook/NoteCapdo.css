@@ -1,7 +1,8 @@
+ 
 /* cấp độ 1 */
 .NoteCapdo1_seach{
      position:relative;
-     top: -600px;
+     top: -700px;
      left: 38%;
      width: 24%;
      height: 40px;
@@ -62,10 +63,36 @@ color: #BDBDBD;
 }
 /* data */
 .NoteCapdo1_conter_data{
-     width: 50%;
+     width: 56%;
      margin: 0 auto;
      position: relative;
-     top: -540px;
-     left: -10px;
-     border: 1px solid red;
+     top: -640px;
+     left: 30px;
+}
+.Notebook_imgager_wrap{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border:2px solid #58CC02;
+  position: relative;
+}
+
+.NoteBook_1_imgager2{
+     position: absolute;
+     top: 2.5px;
+     left: 1.5px;
+     width: 12px;
+     display:none;
+     border: 1px solid black;
+}
+.NoteCapdo1_table{
+     width: 95%;
+}
+.activeCheck{
+     display:block;
+     background-image: url('../../imager/Vector\ 4.2.png');
+     background-repeat: no-repeat;
+     background-size:70% 70%;
+     background-position: center;
 }
