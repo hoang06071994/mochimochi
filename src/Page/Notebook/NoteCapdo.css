@@ -1,0 +1,71 @@
+/* cấp độ 1 */
+.NoteCapdo1_seach{
+     position:relative;
+     top: -600px;
+     left: 38%;
+     width: 24%;
+     height: 40px;
+     background: #F2F2F2;
+     border-radius: 36px;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding: 0 5px;
+}
+.NoteCapdo1_seach_imager{
+     width: 27px;
+     height: 27px;
+     margin-right: 10px;
+}
+.NoteCapdo1_input{
+     margin-left: 10px;
+     width: 100%;
+     border: none;
+     background: transparent;
+
+
+}
+.NoteCapdo1_input:focus{
+     outline: none;
+}
+.NoteCapdo1_input::placeholder{
+     font-family: 'Quicksand';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+letter-spacing: 0.0128571em;
+
+color: #BDBDBD;
+}
+/* nodata */
+.NoteCapdo1_conter_nodata{
+     position: relative;
+     top: -540px;
+     left: -10px;
+}
+.NoteCapdo1_nodata_imager{
+     width: 230.38px;
+}
+.NoteCapdo1_nodata_text{
+     font-family: 'Quicksand';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 30px;
+     align-items: center;
+     text-align: center;
+     letter-spacing: 0.0128571em;
+}
+.NoteCapdo1_nodata_text p{
+     margin: -5px;
+}
+/* data */
+.NoteCapdo1_conter_data{
+     width: 50%;
+     margin: 0 auto;
+     position: relative;
+     top: -540px;
+     left: -10px;
+     border: 1px solid red;
+}
