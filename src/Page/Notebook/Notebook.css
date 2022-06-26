@@ -104,7 +104,7 @@
 .notebook_1{
       max-width: 1920px;
       display: flex;
-      max-height: 1080px;
+      /* max-height: 1080px; */
       position: relative;
       padding: 0 10px;
       box-sizing: border-box;
@@ -125,6 +125,7 @@
 
 }
 .notebook_1_button_grup{
+      padding-top: 20px;
       display: flex;
 }
 .notebook_1_button_grup button{
