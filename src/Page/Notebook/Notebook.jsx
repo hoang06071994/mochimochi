@@ -183,6 +183,13 @@ useEffect(function(){
       <div className="notebook_1_right"></div>
     </div>
     ) : (
+      // <div className='NoteCapdo1_conter_nodata'>
+      //         <img src={mochiNotebook} alt="img" className='NoteCapdo1_nodata_imager' />
+      //         <div className='NoteCapdo1_nodata_text'>
+      //           <span>Loading...........</span>
+      //           <div class="loader"></div>
+      //         </div>
+      //       </div>
       
     <div className='notebook_'>
     <div className="notebook_left">
@@ -191,7 +198,8 @@ useEffect(function(){
     <div className="notebook_center">
       <img src={mochiNotebook} alt="img" className='notebook_mochinotebook_imager' />
       <div className='notebook_center_text1'>
-        <span>Bạn chưa có từ vựng nào trong sổ tay.</span>
+        <span>Loading.......</span>
+        {/* <div class="loader"></div> */}
         <p>Hãy học 1 bài từ mới để cập nhật sổ tay</p>
       </div>
       <button className='notebook_center_button'>Học từ mới</button>
@@ -205,15 +213,17 @@ useEffect(function(){
     </div>
     )
      }
-<div className="notebook_modal">
-  <img src={mochihuongdan} alt="img" />
-  <div>
-    <img src={closemodal} alt="" />
-  </div>
-  <p>Bạn vừa thay đổi danh sách từ cần ôn tập.</p>
-  <button className='notebook_modal_button_update'>Lưu thay đổi</button>
-  <button className='notebook_modal_button_no'>Hủy</button>
-</div>
+     <div className='background_shadow'>
+      <div className="notebook_modal">
+        <img src={mochihuongdan} alt="img" className='notebook_modal_img1' />
+          <div className='notebook_modal_bodyclose'>
+        </div>
+        <p>Bạn vừa thay đổi danh sách từ cần ôn tập.</p>
+        <button className='notebook_modal_button_update'>Lưu thay đổi</button>
+        <button className='notebook_modal_button_no'>Hủy</button>
+      </div>
+     </div>
+
 
       </>
   )

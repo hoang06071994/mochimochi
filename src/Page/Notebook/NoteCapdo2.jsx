@@ -8,6 +8,8 @@ import Seach from '../../imager/search--v2 2.png'
 import Ellipse from '../../imager/Ellipse 9.png'
 import vector42 from '../../imager/Vector 4.2.png'
 import mochiNotebook from '../../imager/Mochi notebook.png'
+import mochihuongdan from '../../imager/mochihuongdan.png'
+
 
 let arrayRememberStatus = []
 let arrayDataAllLevel = []
@@ -188,6 +190,9 @@ function NoteCapdo2() {
   }
   function acceptChange(){
     console.log(189,id)
+    for(let i =0 ; i<arrayRememberStatus.length;i++){
+      postStatusWord(arrayRememberStatus[i],0)
+    }
     if (id == 2) {
       window.location.reload()
     } else {
@@ -201,14 +206,16 @@ function NoteCapdo2() {
       <div className="NoteCapdo1_seach">
         <input id='myInput' type="text" className='NoteCapdo1_input' placeholder='Gõ vào đây từ bạn muốn tìm' onChange={(e) => { handleValueInput(e) }} />
         <img id='myBtn' onClick={() => { searchWord() }} src={Seach} alt="img" className='NoteCapdo1_seach_imager' />
+     </div>
+     <div className='backgound-shadow'>
+        <div className='NoteCapdo1_conter_alert hide-block'>
+        <img src={mochiNotebook} alt="img" className='NoteCapdo1_nodata_imager' />
+        <div className='NoteCapdo1_text'>
+          <p>bạn có muốn lưu lại list từ vựng đã thay đổi không ?</p>
+          <button className='notebook_modal_button1' onClick={() => { cancelClick() }} >Cancel</button>
+          <button className='notebook_modal_button2' onClick={() => { acceptChange() }}>OK</button>
+        </div>
       </div>
-      <div className='NoteCapdo1_conter_alert hide-block'>
-              <img src={mochiNotebook} alt="img" className='NoteCapdo1_nodata_imager' />
-              <div className='NoteCapdo1_nodata_text'>
-                <h1>bạn có muốn lưu lại list từ vựng đã thay đổi không ?</h1>
-                <button onClick={()=>{cancelClick()}} >cancel</button>
-                <button onClick={()=>{acceptChange()}}>OK</button>
-              </div>
             </div>
       <div className='main-block'>
         {NoteData1.length > 0 ?
@@ -238,7 +245,7 @@ function NoteCapdo2() {
             </div>
           ) : (
             <div className='NoteCapdo1_conter_nodata'>
-              <img src={mochiNotebook} alt="img" className='NoteCapdo1_nodata_imager' />
+              <img src={mochihuongdan} alt="img" className='NoteCapdo1_nodata_imager' />
               <div className='NoteCapdo1_nodata_text'>
                 <span>Loading...........</span>
                 <div class="loader"></div>

@@ -2,7 +2,6 @@
 /* cấp độ 1 */
 .container-app {
 height: calc(100%-55px);     
-
 }
 .NoteCapdo1_seach{
      position:relative;
@@ -107,14 +106,72 @@ color: #BDBDBD;
 .hide-block {
      display:none;
 }
+.backgound-shadow {
+    
+}
+
 .NoteCapdo1_conter_alert{
+     border-radius: 20px;
+     border: 1px solid black;
      margin: auto;
-     width: 40%;
+     width: 550px;
+     height: 250px;
      position: relative;
-     top: -747px;
+     top: -550px;
      left: -10px;
      background-color:white;
      z-index: 232323;
+     position: relative;
+}
+.NoteCapdo1_conter_alert img {
+     width: 38%;
+     position: absolute;
+     top: -148px;
+     right: 50%;
+     transform: translateX(50%);
+}
+.NoteCapdo1_text {
+     margin: auto;
+     width: 82%;
+     padding-top: 66px;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     position: relative;
+
+ }
+ .NoteCapdo1_text p{
+     font-family: 'Quicksand';
+     font-size: 18px;
+     font-weight: 700;
+ }
+.notebook_modal_button1{
+     width: 220px;
+    height: 35px;
+     background: linear-gradient(83.47deg, #58CC02 9.02%, #23AC38 90.81%);
+     box-shadow: 0px 4px 0px #209B32;
+     border-radius: 100px;
+     position: relative;
+     top: 0;
+     left: 220px;
+     border: none;
+     font-size: 25px;
+     font-family: 'Quicksand';
+     font-weight: 700;
+     color: #FFFFFF;
+     transform: translateX(-50%);
+}
+.notebook_modal_button2{
+     width: 220px;
+     height: 35px;
+     border-radius: 100px;
+     border:none;
+     box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.1);
+     position: relative;
+     top: 10px;
+     left: 110px;
+     
+
 }
 .loading{
      margin: auto;
@@ -169,4 +226,8 @@ color: #BDBDBD;
      height: 70vh;
      overflow-y: scroll;
      background: #FFFFFF;
+ }
+
+ .NoteCapdo1_conter_data{
+
  }
