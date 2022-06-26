@@ -6,6 +6,8 @@ import mochiNotebook from '../../imager/Mochi notebook.png'
 import alarm from '../../imager/alarm 1.png'
 import vector1 from '../../imager/Vector 9.1.png'
 import vector3 from '../../imager/Vector 9.3.png'
+import mochihuongdan from '../../imager/mochihuongdan.png'
+import closemodal from '../../imager/closebutton.png'
 
 // 
 import { useNavigate } from 'react-router-dom'
@@ -160,7 +162,15 @@ useEffect(function(){
     </div>
     )
      }
-
+<div className="notebook_modal">
+  <img src={mochihuongdan} alt="img" />
+  <div>
+    <img src={closemodal} alt="" />
+  </div>
+  <p>Bạn vừa thay đổi danh sách từ cần ôn tập.</p>
+  <button className='notebook_modal_button_update'>Lưu thay đổi</button>
+  <button className='notebook_modal_button_no'>Hủy</button>
+</div>
 
       </>
   )

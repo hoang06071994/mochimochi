@@ -47,7 +47,8 @@ useEffect(function(){
 },[])
 //function post trạng thái của từ để hiện thị
 function postStatusWord (id,numbstate) {
- axios.post('https://mochien-test.akira.edu.vn/v3.0/words/update-learn-status', 
+//  axios.post('https://mochien-test.akira.edu.vn/v3.0/words/update-learn-status', 
+ axios.post('hts://mochien-test.akira.edu.vn/v3.0/words/update-learn-status', 
   {
     user_token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjo0MzQ2NywidG9rZW4iOiI2MmIzZTU2Yzc3MjAzIiwiaXAiOiI1OC4xODcuMTU0LjIwNiJ9.p9OqGFM2_aHcb7E0a4HupzA_WI7ZHNmqD1dJUZ6EMp0",
     words: {words:[{word_id:id,review_status:numbstate}]}
