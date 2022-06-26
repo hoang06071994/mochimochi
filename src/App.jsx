@@ -37,9 +37,13 @@ function App() {
        <Route path='/Page/Vocabulary/Vocabulary' element={<Vocabulary></Vocabulary>}/>
 
        {/* notebook theo các cấp độ */}
-       <Route path='/Page/Notebook' >
-          <Route path=':capdo' element={<NoteCapdo1></NoteCapdo1>}/>
-          <Route path='Notebook' element={<Notebook></Notebook>}/>
+       <Route>
+          <Route path='/Page/Notebook/NoteCapdo1' element={<NoteCapdo1></NoteCapdo1>}/>
+          <Route path='/Page/Notebook/NoteCapdo2' element={<NoteCapdo2></NoteCapdo2>}/>
+          <Route path='/Page/Notebook/NoteCapdo3' element={<NoteCapdo3></NoteCapdo3>}/>
+          <Route path='/Page/Notebook/NoteCapdo4' element={<NoteCapdo4></NoteCapdo4>}/>
+          <Route path='/Page/Notebook/NoteCapdo5' element={<NoteCapdo5></NoteCapdo5>}/>
+          <Route path='/Page/Notebook/Notebook' element={<Notebook></Notebook>}/>
        </Route>
 
       </Routes>

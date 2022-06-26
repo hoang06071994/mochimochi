@@ -16,22 +16,65 @@ import axios from 'axios'
 
 function Notebook(props) {
   const navigate = useNavigate()
+  // navigate('/Page/Notebook/NoteCapdo1')
+
   // chuyển trangs
-  function onof_capdo1(){
-    navigate('/Page/Notebook/NoteCapdo1')
+    
+    function onof_capdo1(){
+      console.log(window.location.href.includes('/Page/Notebook/Notebook'))
+      if(window.location.href.includes('/Page/Notebook/Notebook')||props.arrayRememberStatus.length==0){
+        navigate('/Page/Notebook/NoteCapdo1')
+      }else {
+        props.popUpConfirmChangeWordList(1)
+
+      }
+
+    // navigate('/Page/Notebook/NoteCapdo1')
   }
   function onof_capdo2(){
-    alert('bạn có chắc chuyển trang')
-    navigate('/Page/Notebook/NoteCapdo2')
+    console.log(window.location.href.includes('/Page/Notebook/Notebook'))
+    if(window.location.href.includes('/Page/Notebook/Notebook')||props.arrayRememberStatus.length==0){
+      navigate('/Page/Notebook/NoteCapdo2')
+    }else {
+      props.popUpConfirmChangeWordList(2)
+
+    }
+    // props.popUpConfirmChangeWordList(2)
   }
   function onof_capdo3(){
-    navigate('/Page/Notebook/NoteCapdo3')
+    // props.popUpConfirmChangeWordList(3)
+    console.log(window.location.href.includes('/Page/Notebook/Notebook'))
+    if(window.location.href.includes('/Page/Notebook/Notebook')||props.arrayRememberStatus.length==0){
+      navigate('/Page/Notebook/NoteCapdo3')
+    }else {
+      props.popUpConfirmChangeWordList(3)
+
+    }
+    // navigate('/Page/Notebook/NoteCapdo3')
   }
   function onof_capdo4(){
-    navigate('/Page/Notebook/NoteCapdo4')
+    // props.popUpConfirmChangeWordList(4)
+    console.log(window.location.href.includes('/Page/Notebook/Notebook'))
+    if(window.location.href.includes('/Page/Notebook/Notebook')||props.arrayRememberStatus.length==0){
+      navigate('/Page/Notebook/NoteCapdo4')
+    }else {
+      props.popUpConfirmChangeWordList(4)
+
+    }
+
+    // navigate('/Page/Notebook/NoteCapdo4')
   }
   function onof_capdo5(){
-    navigate('/Page/Notebook/NoteCapdo5')
+    // props.popUpConfirmChangeWordList(5)
+    console.log(window.location.href.includes('/Page/Notebook/Notebook'))
+    if(window.location.href.includes('/Page/Notebook/Notebook')||props.arrayRememberStatus.length==0){
+      navigate('/Page/Notebook/NoteCapdo5')
+    }else {
+      props.popUpConfirmChangeWordList(5)
+
+    }
+
+    // navigate('/Page/Notebook/NoteCapdo5')
   }
   // lấy data
 const [NoteData,setNoteData]=useState([])

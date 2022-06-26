@@ -1,5 +1,9 @@
  
 /* cấp độ 1 */
+.container-app {
+height: calc(100%-55px);     
+
+}
 .NoteCapdo1_seach{
      position:relative;
      top: -700px;
@@ -40,11 +44,15 @@ letter-spacing: 0.0128571em;
 color: #BDBDBD;
 }
 /* nodata */
-.NoteCapdo1_conter_nodata{
+.NoteCapdo1_conter_nodata {
+     text-align: center;
      position: relative;
-     top: -540px;
+     top: -656px;
      left: -10px;
-}
+     background: #FFFFFF;
+     width: 45%;
+     margin: 0 auto;
+ }
 .NoteCapdo1_nodata_imager{
      width: 230.38px;
 }
@@ -62,13 +70,7 @@ color: #BDBDBD;
      margin: -5px;
 }
 /* data */
-.NoteCapdo1_conter_data{
-     width: 56%;
-     margin: 0 auto;
-     position: relative;
-     top: -640px;
-     left: 30px;
-}
+
 .Notebook_imgager_wrap{
   width: 15px;
   height: 15px;
@@ -96,3 +98,75 @@ color: #BDBDBD;
      background-size:70% 70%;
      background-position: center;
 }
+.search-block {
+     display: none;
+}
+.active-block  {
+     display: block
+}
+.hide-block {
+     display:none;
+}
+.NoteCapdo1_conter_alert{
+     margin: auto;
+     width: 40%;
+     position: relative;
+     top: -747px;
+     left: -10px;
+     background-color:white;
+     z-index: 232323;
+}
+.loading{
+     margin: auto;
+     width: 40%;
+     position: relative;
+     top: -747px;
+     left: -10px;
+     background-color:white;
+     z-index: 232323;
+}
+.searchNoInfo{
+     margin: auto;
+     width: 40%;
+     position: relative;
+     top: -676px;
+     left: -10px;
+     background-color:white;
+     z-index: 232323;
+}
+.main-block {
+     height: 100vh
+}
+.loader {
+     margin : auto;
+     border: 16px solid #f3f3f3;
+     border-radius: 50%;
+     border-top: 16px solid #3498db;
+     width: 50px;
+     height: 50px;
+     -webkit-animation: spin 2s linear infinite; /* Safari */
+     animation: spin 2s linear infinite;
+   }
+   
+   /* Safari */
+   @-webkit-keyframes spin {
+     0% { -webkit-transform: rotate(0deg); }
+     100% { -webkit-transform: rotate(360deg); }
+   }
+   
+   @keyframes spin {
+     0% { transform: rotate(0deg); }
+     100% { transform: rotate(360deg); }
+   }
+   .NoteCapdo1_conter_data {
+     width: 56%;
+     margin: 0 auto;
+     position: relative;
+     top: -674px;
+     box-sizing: border-box;
+     padding-left: 20px;
+     /* left: 30px; */
+     height: 70vh;
+     overflow-y: scroll;
+     background: #FFFFFF;
+ }
